@@ -2,10 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Cera Pro' , sans-serif;
+    font-family: sans-serif;
 }
 
 h4 {
@@ -24,7 +21,6 @@ h1 {
 }
 
 .herosmall--text {
-    font-family: Cera Pro;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -41,7 +37,6 @@ h1 {
 }
 
 .hero--texts h1 {
-    font-family: Cera Pro;
     font-style: normal;
     font-weight: 900;
     font-size: 70px;
@@ -51,7 +46,6 @@ h1 {
 }
 
 .hero--texts p {
-    font-family: Cera Pro;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
