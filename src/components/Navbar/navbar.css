@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .padding-m1 {
+    padding: 0 40px;
+} */
+
+.margin--m1 {
+    margin: 20px 50px;
+}
+
+.btn{
+    background-color:#46A358;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    transform: scale(.97);
+    border: none;
+}
+
+
+/* Navbar */
+.navbar {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+    background: #fff;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+.links {
+    position: relative;
+}
+
+.logo--p1 {
+    display: flex;
+    align-items: center;
+}
+
+.navlogo-text {
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.nav--links {
+    margin: 0 15px;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+}
+.active {
+    font-weight: 600;
+    height: 100%;
+    border-bottom: 3px solid #088178;
+    /* bottom: -4px; */
+}
+
+    /* .nav--links:hover {
+        font-weight: 600;
+        border-bottom: 2px solid #088178;
+    } */
+
+.navlogo-text {
+    color: #46A358;
+}
+
+.icons {
+    display: flex;
+}
+
+.margin {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.login--btn{
+    background-color:#46A358;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}

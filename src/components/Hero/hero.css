@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cera Pro' , sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 650;
+}
+
+.hero-section{
+    height: 450px;
+    display: flex;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+}
+
+.herosmall--text {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D3D3D;
+}
+
+.hero--texts {
+    flex: 1;
+    padding-top: 68px;
+    padding-left: 40px;
+}
+
+.hero--texts h1 {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: #3D3D3D; 
+}
+
+.hero--texts p {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+}
+
+.hero-btn {
+    margin-top: 43px;
+    background: #46A358;
+    padding: 0;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.hero--texts span {
+    color: #46A358;
+}
+
+.hero--pics {
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.hero--small{
+    position: absolute;
+    bottom: 30px;
+    left: 126px;
+}
+
+.hero--pics img {
+    padding: 0;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btns li {
+    margin: 7px;
+}
+.btns li::marker {
+    color: #46A358;
+    font-size: 25px;
+}
+
+
+

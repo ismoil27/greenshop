@@ -1,0 +1,89 @@
+
+.catogories {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.catogories  p {
+    /* margin-block: 10px; */
+    cursor: pointer;
+    font-family: Cera Pro;
+    font-size: 15px;
+    line-height: 40px;
+    /* padding: 0 24px; */
+}
+
+.catogories  p:hover {
+    text-decoration: underline;
+    /* color: #46A358; */
+}
+
+.catogories .ct--title {
+    padding-left: 30px;
+}
+
+.catogories .ct--number {
+    padding-right: 24px;
+}
+
+.body--left {
+    height: 774px;
+    width: 310px;
+    background: #FBFBFB;
+}
+
+.body--left h2 {
+    font-family: Cera Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    color: #3D3D3D;
+    padding: 14px 1px 7px 18px;
+}
+
+.rangeinput--div {
+    margin: 36px 0 46px 18px;
+}
+
+.price--text {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 25px;
+    color: #3D3D3D;
+}
+
+.rangeinput--div input {
+    margin-left: 30px;
+    /* margin-bottom: 20px; */
+}
+
+.range--padding {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.range-input {
+    background-color: red;
+
+}
+
+.range-price span {
+    color: #46A358;
+}
+
+.range-btn {
+    width: 90px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 30px;
+}
+
+.active-categories {
+    color: #46A358;
+    cursor: pointer;
+    font-weight: bold;
+}
