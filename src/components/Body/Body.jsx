@@ -5,15 +5,12 @@ import './body.css'
 import salepic from './images/body-left/Super Sale.png';
 import saleflower from './images/body-left/Left sale.png';
 import strokeicon from './images/body-right/Stroke icon.svg';
-import box1 from './images/body-right/box1.png';
-
 
 class Body extends Component {
     constructor(props) {
         super(props);
         this.state = { data: mock, active: 'All Plants' }
     }
-
 
     render() { 
         return (
@@ -90,36 +87,10 @@ class Body extends Component {
                         ))
                     }
                     </div>
-
-                     {/* <div className='bodyright--pics'>
-                         <div className='boxes'>
-                             <div className='box--pic'>
-                                <img src={box1} alt="" />
-                             </div>
-                             <div className='box--texts'>
-                                <p className='flowers--name'>Barberton Daisy</p>
-                                <p className='flower--price'>$179.00</p>
-                             </div>
-                         </div>
-                     </div> */}
-                    
-                  
-                </div>
-               
+                </div> 
             </div>
          );
     }
 }
  
 export default Body;
-
-
-
-
-
-
- {/* <p onClick={() => this.setState({active: value.id})}
-                                 className= {`ct--title ${this.state.active  === value.id && 'active-categories'}`}>{value.title}</p>
-                                <p onClick={() => this.setState({active: value.id})}
-                                 className= {`ct--number ${this.state.active  === value.id && 'active-categories'}`}>({value.number})</p>
-                             */}

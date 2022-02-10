@@ -14,6 +14,7 @@ class App extends Component {
                 <Navbar />
                 <Hero />
                 <Body />
+                <Body />
             </div>
          );
     }

@@ -183,7 +183,7 @@
 
 .boxes--img {
     padding-top: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .box--pic {
@@ -193,7 +193,7 @@
 
 
 .box--texts {
-    margin-top: 12px;
+    padding-top: 12px;
     padding-left: 10px;
 }
 
