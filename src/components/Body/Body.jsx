@@ -1,21 +1,34 @@
 import React, { Component } from 'react';
-import {mock, sizes, bodymenu, bodyboxes} from './mock'
-import './body.css'
-// import '../Navbar/navbar.css'
+import {mock, sizes, bodymenu, bodyboxes, buttonNumbers} from './mock'
+import Cards from './Card';
+import './body.css';
+import { Container, Button, Arrow, Wrapper, Box, Image, Span, Title, Description, Div } from './style';
 import salepic from './images/body-left/Super Sale.png';
 import saleflower from './images/body-left/Left sale.png';
 import strokeicon from './images/body-right/Stroke icon.svg';
+import arrow from './images/body-right/Arrow right icon.svg';
+import box1 from './images/body-right/Box_1.png'
+import box2 from './images/body-right/Box_2.png'
+import ellipse from './images/body-right/Ellipse 8.png'
+
 
 class Body extends Component {
     constructor(props) {
         super(props);
-        this.state = { data: mock, active: 'All Plants' }
+        this.state = {
+        data: mock, 
+        active: 'All Plants',
+        pics: bodyboxes,
+        number: buttonNumbers
+        
+    }
     }
 
     render() { 
         return (
-            <div className='body'>
-                <div className='body--left margin--m1'>
+             <div className='body'>
+                <div className='flextest'>
+                <div className='body--left '>
                     <h2>Categories</h2>
                     {
                         mock.map((value) => (
@@ -32,7 +45,8 @@ class Body extends Component {
                         <input className='range-input range--padding' type="range" />
                         <p className='range-price range--padding'>Price: <span>$39 - $1230</span> </p>
                         <p className='btn range-btn range--padding'>Filter</p>
-                    </div>
+                    </div>   {/* rangeinput--div closed*/}
+
                    <h3 className='size--text'>Size</h3>
                    {
                         sizes.map((value) => (
@@ -49,7 +63,7 @@ class Body extends Component {
                         <p className='saletext'>UP TO 75% OFF</p>
                         <img src={saleflower} alt="" />
                     </div>
-                </div>
+                </div>   {/* body--left div closed */}
 
                 {/* body-right */}
 
@@ -61,34 +75,53 @@ class Body extends Component {
                                 <li onClick={() => this.setState({active: menu})}  className={`nav--links ${this.state.active === menu && 'activebody-menu'}`} >{menu}</li>
                                 </ul>
                             ))}
-                         </div>
+                         </div>  {/* bodymenu--links closed */}
                         <div className='menubar'>
                             <span>Short by:</span>
                             <span> Default sorting</span>
                             <img src={strokeicon} alt="" />
+                        </div> 
+
                         </div> {/* right--menu div closed */}
-                    </div>
+            
                         <div className='test'>
                     {
-                        bodyboxes.map(({id, pic, flowername, flowerprice}) => (
-                            <div key={id} className='bodyright--pics'>
-                                <div className='boxes'>
-                                    <div className='boxes--img'>
-                                        <img src={pic} alt="" />
-                                    </div>
-                                    <div className='box--texts'>
-                                        <p className='flowers--name'>{flowername}</p>
-                                        <p className='flower--price'>${flowerprice}</p>
-                                    </div>
-                                </div>
-
-
-                            </div>
+                        this.state.pics.map((value) => (
+                            <Cards value={value}/>
                         ))
                     }
-                    </div>
-                </div> 
+                        </div>
+                 </div>  {/*body--right closed */}
             </div>
+                    <Container>
+                            {this.state.number.map((value)=>(
+                                <Button>{value.btnnumber}</Button> 
+                            ))}
+                            <Arrow src={arrow}/>
+                        </Container>
+                        <Wrapper>
+                            <Box>
+                                <Image src={box1}/>
+                                <Span src={ellipse}></Span>
+                                <Div>
+                                <Title>Summer Cactus  <br/>& Succulents</Title>
+                                <Description>We are an online plant shop offering a wide range of cheap and trendy plants</Description>
+                                <Button fontsize='15px' width='140px' height='40px' border='6px' margintop='20px' marginleft='auto'>Find More</Button>
+                                </Div>
+                            </Box>
+                            <Box>
+                            <Image src={box2}/>
+                                <Span src={ellipse}></Span>
+                                <Div>
+                                <Title>Styling Trends <br /> & much more</Title>
+                                <Description>We are an online plant shop offering a wide range of cheap and trendy plants</Description>
+                                <Button fontsize='15px' width='140px' height='40px' border='6px' margintop='20px' marginleft='auto' >Find More</Button>
+                                </Div>
+                            </Box>
+                        </Wrapper>
+        </div>
+           
+
          );
     }
 }

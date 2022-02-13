@@ -1,7 +1,7 @@
 import box1 from './images/body-right/box1.png';
 import box2 from './images/body-right/box2.png';
 import box3 from './images/body-right/box3.png';
-import box4 from './images/body-right/box4.png';
+// import box4 from './images/body-right/box4.png';
 import box5 from './images/body-right/box5.png';
 import box6 from './images/body-right/box6.png';
 import box7 from './images/body-right/box7.png';
@@ -39,10 +39,18 @@ export const bodyboxes = [
     {id: 1, pic: box1, flowername: 'Barberton Daisy', flowerprice: '119.00'},
     {id: 2, pic: box2, flowername: 'Angel Wing Begonia', flowerprice: '169.00'},
     {id: 3, pic: box3, flowername: 'African Violet ', flowerprice: '119.00'},
-    {id: 4, pic: box4, flowername: 'Beach Spider Lily ', flowerprice: '129.00'},
+    {id: 4, pic: box5, flowername: 'Beach Spider Lily ', flowerprice: '129.00'},
     {id: 5, pic: box5, flowername: 'Blushing Bromeliad ', flowerprice: '139.00'},
     {id: 6, pic: box6, flowername: 'Aluminum Plant ', flowerprice: '179.00'},
     {id: 7, pic: box7, flowername: 'Bird\'s Nest Fern', flowerprice: '99.00'},
     {id: 8, pic: box8, flowername: 'Broadleaf Lady Palm', flowerprice: '59.00'},
     {id: 9, pic: box9, flowername: 'Chinese Evergreen', flowerprice: '39.00'},
+]
+
+
+export const buttonNumbers = [
+    {id: 1, btnnumber: 1 },
+    {id: 2, btnnumber: 2 },
+    {id: 3, btnnumber: 3 },
+    {id: 4, btnnumber: 4 },
 ]
