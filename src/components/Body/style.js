@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { ReactComponent as arrowright } from './images/Blogpics/Arrow Right.svg';
+
 
 export const Wrapper = styled.div`
 display: flex;
@@ -125,17 +127,63 @@ margin-top: 35px;
 export const BlogCard = styled.div`
 width: 268px;
 height: 400px;
+:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
 `
 
 export const Blogimage = styled.img`
 width: 100%;
 `
+export const BlogtextWrapper = styled.div`
+background: #FBFBFB;
+padding: 5px 10px;
+`
+
 export const Blogcardtext = styled.div`
 color: #46A358;
-font-family: Cera Pro, sans-serif;
+font-family: 'Cera Pro', sans-serif;
 font-weight: 500;
 font-size: 14px;
+margin-bottom: 10px;
+`
+
+export const Blogbigtext = styled.div`
+font-weight: bold;
+font-size: 20px;
+color: #3D3D3D;
+margin-bottom: 5px;
+`
+
+export const Blogsmalltext = styled.div`
+font-size: 14px;
+color: #727272;
+line-height: 22px;
+margin-bottom: 9px;
 
 `
+
+export const Readwrapper = styled.div`
+display: flex;
+align-items: center;
+
+`
+
+export const Blogreadmoretext = styled.div`
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #3D3D3D;
+cursor: pointer;
+:hover{
+    color: #46A358;
+}
+margin-right: 5px;
+`
+
+export const Arrowicon = styled(arrowright)`
+
+`
+
 
 

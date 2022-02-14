@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {mock, sizes, bodymenu, bodyboxes, buttonNumbers, Blogdata} from './mock'
 import Cards from './Card';
 import './body.css';
-import { Container, Button, Arrow, Wrapper, Box, Image, Span, Title, Description, Div, Blogstext, BigText, Smalltext, BlogContainer, BlogCard, Blogimage, Blogcardtext } from './style';
+import { Container, Button, Arrow, Wrapper, Box, Image, Span, Title, Description, Div, Blogstext, BigText, Smalltext, BlogContainer, BlogCard, Blogimage, Blogcardtext, BlogtextWrapper, Blogbigtext, Blogsmalltext, Blogreadmoretext, Readwrapper, Arrowicon } from './style';
 import salepic from './images/body-left/Super Sale.png';
 import saleflower from './images/body-left/Left sale.png';
 import strokeicon from './images/body-right/Stroke icon.svg';
@@ -131,11 +131,21 @@ class Body extends Component {
                         </Blogstext>
 
                         <BlogContainer>
-                            <BlogCard>
-                                <Blogimage src={blog1} alt=''/>
-                                <Blogcardtext>September 12  | Read in 6 minutes</Blogcardtext>
-
+                            {Blogdata.map(({id, src, blogcardtext, blogbigtext, blogsmalltext, readmore, arrowicon}) => (
+                                <BlogCard key={id}>
+                                <Blogimage src={src} alt=''/>
+                                <BlogtextWrapper>
+                                    <Blogcardtext>{blogcardtext}</Blogcardtext>
+                                    <Blogbigtext> {blogbigtext} </Blogbigtext>
+                                    <Blogsmalltext> {blogsmalltext} </Blogsmalltext>
+                                    <Readwrapper>
+                                    <Blogreadmoretext> {readmore} </Blogreadmoretext>
+                                    <Arrowicon />
+                                    </Readwrapper>
+                                </BlogtextWrapper>
                             </BlogCard>
+                            ))}
+                            
                         </BlogContainer>
 
         </div>

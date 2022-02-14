@@ -14,6 +14,8 @@ import blog2 from './images/Blogpics/Blog 02.png'
 import blog3 from './images/Blogpics/Blog 03.png'
 import blog4 from './images/Blogpics/Blog 04.png'
 
+import arrowicon from './images/Blogpics/Arrow Right.svg'
+
 
 
 
@@ -62,8 +64,12 @@ export const buttonNumbers = [
 ]
 
 export const Blogdata = [
-    {id: 1, src: blog1, },
-    {id: 2, src: blog2, },
-    {id: 3, src: blog3, },
-    {id: 4, src: blog4, }
+    {id: 1, src: blog1, blogcardtext: 'September 12 | Read in 6 minutes', 
+    blogbigtext: 'Cactus & Succulent Care Tips', blogsmalltext: 'Cacti are succulents are easy care plants for any home or patio.', readmore: 'Read More', arrowicon: arrowicon },
+    {id: 2, src: blog2, blogcardtext: 'September 13 | Read in 2 minutes', 
+    blogbigtext: 'Top 10 Succulents for Your Home', blogsmalltext: 'Best in hanging baskets. Prefers medium to high light.', readmore: 'Read More', arrowicon: arrowicon},
+    {id: 3, src: blog3, blogcardtext: 'September 15 | Read in 3 minutes', 
+    blogbigtext: 'Cacti & Succulent Care Tips', blogsmalltext: 'Cacti and succulents thrive in containers and because most are.', readmore: 'Read More', arrowicon: arrowicon},
+    {id: 4, src: blog4, blogcardtext: 'September 15 | Read in 2 minutes', 
+    blogbigtext: 'Best Houseplants Room by Room', blogsmalltext: 'The benefits of houseplants are endless. In addition to.', readmore: 'Read More', arrowicon: arrowicon}
 ]
