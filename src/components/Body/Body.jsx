@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import {mock, sizes, bodymenu, bodyboxes, buttonNumbers} from './mock'
+import {mock, sizes, bodymenu, bodyboxes, buttonNumbers, Blogdata} from './mock'
 import Cards from './Card';
 import './body.css';
-import { Container, Button, Arrow, Wrapper, Box, Image, Span, Title, Description, Div } from './style';
+import { Container, Button, Arrow, Wrapper, Box, Image, Span, Title, Description, Div, Blogstext, BigText, Smalltext, BlogContainer, BlogCard, Blogimage, Blogcardtext } from './style';
 import salepic from './images/body-left/Super Sale.png';
 import saleflower from './images/body-left/Left sale.png';
 import strokeicon from './images/body-right/Stroke icon.svg';
@@ -12,6 +12,10 @@ import box2 from './images/body-right/Box_2.png'
 import ellipse from './images/body-right/Ellipse 8.png'
 
 
+import blog1 from './images/Blogpics/Blog 01.png'
+
+
+
 class Body extends Component {
     constructor(props) {
         super(props);
@@ -19,7 +23,8 @@ class Body extends Component {
         data: mock, 
         active: 'All Plants',
         pics: bodyboxes,
-        number: buttonNumbers
+        number: buttonNumbers,
+        blogdata: Blogdata
         
     }
     }
@@ -102,7 +107,7 @@ class Body extends Component {
                         <Wrapper>
                             <Box>
                                 <Image src={box1}/>
-                                <Span src={ellipse}></Span>
+                                <Span src={ellipse} alt=''></Span>
                                 <Div>
                                 <Title>Summer Cactus  <br/>& Succulents</Title>
                                 <Description>We are an online plant shop offering a wide range of cheap and trendy plants</Description>
@@ -111,7 +116,7 @@ class Body extends Component {
                             </Box>
                             <Box>
                             <Image src={box2}/>
-                                <Span src={ellipse}></Span>
+                                <Span src={ellipse} alt=''></Span>
                                 <Div>
                                 <Title>Styling Trends <br /> & much more</Title>
                                 <Description>We are an online plant shop offering a wide range of cheap and trendy plants</Description>
@@ -119,6 +124,20 @@ class Body extends Component {
                                 </Div>
                             </Box>
                         </Wrapper>
+
+                        <Blogstext>
+                            <BigText>Our Blog Posts</BigText>
+                            <Smalltext>We are an online plant shop offering a wide range of cheap and trendy plants.</Smalltext>
+                        </Blogstext>
+
+                        <BlogContainer>
+                            <BlogCard>
+                                <Blogimage src={blog1} alt=''/>
+                                <Blogcardtext>September 12  | Read in 6 minutes</Blogcardtext>
+
+                            </BlogCard>
+                        </BlogContainer>
+
         </div>
            
 

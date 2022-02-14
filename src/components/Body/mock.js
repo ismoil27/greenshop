@@ -9,6 +9,12 @@ import box8 from './images/body-right/box8.png';
 import box9 from './images/body-right/box9.png';
 
 
+import blog1 from './images/Blogpics/Blog 01.png'
+import blog2 from './images/Blogpics/Blog 02.png'
+import blog3 from './images/Blogpics/Blog 03.png'
+import blog4 from './images/Blogpics/Blog 04.png'
+
+
 
 
 export const mock = [
@@ -53,4 +59,11 @@ export const buttonNumbers = [
     {id: 2, btnnumber: 2 },
     {id: 3, btnnumber: 3 },
     {id: 4, btnnumber: 4 },
+]
+
+export const Blogdata = [
+    {id: 1, src: blog1, },
+    {id: 2, src: blog2, },
+    {id: 3, src: blog3, },
+    {id: 4, src: blog4, }
 ]

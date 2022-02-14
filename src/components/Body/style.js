@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+display: flex;
+justify-content: space-between;
+margin-top: 140px;
+`
+
 export const Container = styled.div`
 display: flex;
 justify-content: flex-end;
@@ -25,6 +31,11 @@ margin-top: ${(props)=> props.margintop ? `${props.margintop}` : `0px`};
 :active{
     transform: scale(0.97);
 }
+:hover{
+    box-shadow:   inset 0 -3em 3em #1c8b32,
+    0 0  0 2px #93e4a3,
+    0.3em 0.3em 1em  #93e4a3;
+}
 `
 
 export const Arrow = styled.img`
@@ -36,15 +47,9 @@ box-sizing: border-box;
     transform: scale(0.97);
     background-color: #46A358;
     color: #fff;
-
 }
 `
 
-export const Wrapper = styled.div`
-display: flex;
-justify-content: space-between;
-margin-top: 140px;
-`
 export const Box = styled.div`
 width: 586px;
 height: 300px;
@@ -53,13 +58,16 @@ justify-content: space-between;
 background: #FBFBFB;
 box-sizing: border-box;
 position: relative;
+:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
 `
 
 export const Image = styled.img`
 width: 292px;
 height: 292px;
-
 `
+
 export const Span = styled.img`
 position: absolute;
 left: 0;
@@ -72,7 +80,6 @@ font-weight: bold;
 color: #000;
 /* line-height: 18px; */
 margin-left: auto;
-
 `
 
 export const Div = styled.div`
@@ -90,7 +97,45 @@ margin-left: auto;
 margin-top: 10px;
 `
 
-// export const Button = styled.button`
+export const Blogstext = styled.div`
+text-align: center;
+margin-top: 130px;
+`
 
-// `
+export const BigText = styled.div`
+font-size: 24px;
+font-weight: 600;
+font-family: 'Cera Pro', sans-serif;
+`
+
+export const Smalltext = styled.div`
+font-size: 16px;
+font-weight: normal;
+margin-top: 15px;
+color: #727272;
+font-family: 'Cera Pro', sans-serif;
+`
+
+export const BlogContainer = styled.div`
+display: flex;
+justify-content: space-between;
+margin-top: 35px;
+`
+
+export const BlogCard = styled.div`
+width: 268px;
+height: 400px;
+`
+
+export const Blogimage = styled.img`
+width: 100%;
+`
+export const Blogcardtext = styled.div`
+color: #46A358;
+font-family: Cera Pro, sans-serif;
+font-weight: 500;
+font-size: 14px;
+
+`
+
 
