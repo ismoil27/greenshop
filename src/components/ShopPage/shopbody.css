@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Homeshoptext span{
+    color: #3D3D3D;
+    font-weight: bold;
+    font-size: 15px;
+}
+.pricerate {
+    display: flex;
+    align-items: center;
+padding-top: 21px;
+border-bottom:  0.3px solid rgba(70, 163, 88, 0.5);
+padding-bottom: 10px;
+
+}
+
+.stars{ 
+   margin-left: auto;
+}
+
+.stars span {
+    padding-left: 12px;
+    font-size: 15px;
+    font-style: normal;
+}

@@ -40,7 +40,7 @@
 }
 
 .body--left {
-    /* height: 774px; */
+    height: fit-content;
     width: 310px;
     background: #FBFBFB;
     display: flex;
@@ -68,9 +68,9 @@
     color: #3D3D3D;
 }
 
-.rangeinput--div input {
+/* .rangeinput--div input {
     margin-left: 30px;
-}
+} */
 
 .range--padding {
     margin-left: 30px;
@@ -79,7 +79,6 @@
 
 .range-input {
     background-color: red;
-
 }
 
 .range-price span {

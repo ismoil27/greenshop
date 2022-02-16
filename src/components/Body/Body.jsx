@@ -12,7 +12,7 @@ import box2 from './images/body-right/Box_2.png'
 import ellipse from './images/body-right/Ellipse 8.png'
 
 
-import blog1 from './images/Blogpics/Blog 01.png'
+// import blog1 from './images/Blogpics/Blog 01.png'
 
 
 

@@ -120,6 +120,7 @@ font-family: 'Cera Pro', sans-serif;
 
 export const BlogContainer = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-between;
 margin-top: 35px;
 `
