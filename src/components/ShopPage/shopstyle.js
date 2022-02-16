@@ -72,3 +72,19 @@ color: #46A358;
 export const Rate = styled.img`
 
 `
+
+export const Description = styled.div`
+padding-top: 15px;
+`
+
+export const GeneralButton = styled.button`
+width: 130px;
+height: 40px;
+background: #46A358;
+border-radius: 6px;
+outline: none;
+border: none;
+:active{
+    transform: scale(0.97);
+}
+`

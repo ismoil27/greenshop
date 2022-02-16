@@ -3,7 +3,7 @@ import Navbar from '../Navbar/Navbar';
 import './shopbody.css';
 import { shopdata, stars } from './mockdata';
 import mainactive from './shopimages/mainactive 1.png'
-import { CartContainer, Container, ImageMain, Images, PictureContainer, PictureLeft, PictureRight, Price, ProductContainer, Rate, Title } from './shopstyle';
+import { CartContainer, Container, Description, GeneralButton, ImageMain, Images, PictureContainer, PictureLeft, PictureRight, Price, ProductContainer, Rate, Title } from './shopstyle';
 
 
 class ShopBody extends Component {
@@ -53,20 +53,30 @@ class ShopBody extends Component {
                         </Price>
                         <div className='stars'>
                         {   
-
                             stars.map(({id, src})=>(
-
                                 <Rate src={src} alt='test'/>
-                               
                             ))
-
-                    
                         }
                         <span>19 Customer Review</span>
                          </div> 
-                        
+                
                         </div>
 
+                        <Description>
+                            <p className='short--description'>Short Description:</p>
+                            <p className='description--text'>The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. </p>
+                        </Description>
+                        <div className='size--container'>
+                            <p className='size'>Size:</p>
+                            <div className='sizes'>
+                                <p className='flower--sizes'>S</p>
+                                <p className='flower--sizes'>M</p>
+                                <p className='flower--sizes'>L</p>
+                                <p className='flower--sizes'>XL</p>
+                            </div>
+                        </div> 
+
+                        <GeneralButton>BUY NOW</GeneralButton>
 
                     </CartContainer>
                </ProductContainer>
